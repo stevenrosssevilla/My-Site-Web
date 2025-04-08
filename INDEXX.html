@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Car Selling Website</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .buy-button {
+      background-color: #3498db;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      margin-top: 10px;
+      cursor: pointer;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+
+    .buy-button:hover {
+      background-color: #2980b9;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>🚗 Welcome to CarXpress</h1>
+    <p>Your trusted place to buy and review cars!</p>
+  </header>
+
+  <section class="car-listing">
+    <h2>Available Cars</h2>
+    <div class="car-grid">
+      <div class="car-card">
+        <img src="c:\Users\USER-PC\OneDrive\Pictures\11.jpg" alt="Toyota Corolla">
+        <h3>Toyota Corolla</h3>
+        <p>Price: $15,000</p>
+        <button class="buy-button" onclick="buyCar('Toyota Corolla')">Buy Now</button>
+      </div>
+      <div class="car-card">
+        <img src="c:\Users\USER-PC\OneDrive\Pictures\111.jpg" alt="Honda Civic">
+        <h3>Honda Civic</h3>
+        <p>Price: $17,500</p>
+        <button class="buy-button" onclick="buyCar('Honda Civic')">Buy Now</button>
+      </div>
+      <div class="car-card">
+        <img src="c:\Users\USER-PC\OneDrive\Pictures\1111.jpg" alt="Ford Mustang">
+        <h3>Ford Mustang</h3>
+        <p>Price: $30,000</p>
+        <button class="buy-button" onclick="buyCar('Ford Mustang')">Buy Now</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="reviews">
+    <h2>Customer Reviews</h2>
+    <div class="review-card">
+      <p>"I love my new Toyota Corolla. Super smooth ride!"</p>
+      <span>- Sarah L.</span>
+    </div>
+    <div class="review-card">
+      <p>"Great service and excellent pricing. Highly recommend!"</p>
+      <span>- John M.</span>
+    </div>
+    <div class="review-card">
+      <p>"Ford Mustang was a dream come true. Thank you CarXpress!"</p>
+      <span>- Amanda P.</span>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 CarXpress. All rights reserved.</p>
+  </footer>
+
+  <script>
+    function buyCar(carName) {
+      alert(`You have selected to buy the ${carName}. Our team will contact you soon!`);
+    }
+  </script>
+
+</body>
+</html>
